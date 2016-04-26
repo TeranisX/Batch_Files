@@ -1,0 +1,9 @@
+@echo off
+
+Echo this will now change the proxy to that of "Company Name"
+
+REG ADD "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyServer  /d "http=proxyurl:port;https=proxyurl:port;ftp=proxyurl:port;" /t REG_SZ /f
+
+echo Open a new page and continue webbing...
+
+pause
