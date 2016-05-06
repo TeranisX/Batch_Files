@@ -1,0 +1,7 @@
+Echo off
+echo to see the wireless password
+
+netsh wlan show profile name=“ProfileName” key=clear
+echo use the password shown dubmass
+
+pause
